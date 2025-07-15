@@ -1,0 +1,9 @@
+[
+  {
+    "id": "6c176347",
+    "paciente_id": "3b4ea2a1",
+    "medico_id": "3dfddf6f",
+    "data_hora": "2025-08-10T10:30:00",
+    "status": "agendada"
+  }
+]
