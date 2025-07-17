@@ -27,7 +27,8 @@ def cadastrar_medico():
     novo_medico = {
         'id': str(uuid.uuid4())[:8],
         'nome': nome,
-        'especialidade': especialidade
+        'especialidade': especialidade,
+        'salario': 10000.00  # salário de 10k
     }
     
     medicos.append(novo_medico)
@@ -45,7 +46,7 @@ def listar_medicos():
         print("Nenhum médico cadastrado.")
     else:
         for m in medicos:
-            print(f"ID: {m['id']} | Nome: {m['nome']} | Especialidade: {m['especialidade']}")
+            print(f"ID: {m['id']} | Nome: {m['nome']} | Especialidade: {m['especialidade']} | Salário: R$ {m['salario']:.2f}")
             
     print("-" * 35)
     input("Pressione Enter para continuar...")
